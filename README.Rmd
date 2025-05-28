@@ -16,39 +16,33 @@ knitr::opts_chunk$set(
 # horusheresy
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/Matt-Tansley/horusheresy/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Matt-Tansley/horusheresy/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of horusheresy is to ...
+`horusheresy` is a data package containing data on the Horus Heresy 2.0 rules.
 
 ## Installation
 
-You can install the development version of horusheresy like so:
+Install the package from GitHub like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("Matt-Tansley/horusheresy")
 ```
 
-## Example
+## Usage
 
-This is a basic example which shows you how to solve a common problem:
+This package creates the `horusheresy` data object.
+
+Use `?horusheresy` for more info on the data and its format.
 
 ```{r example}
 library(horusheresy)
-## basic example code
+
+head(horusheresy)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## About 
 
-```{r cars}
-summary(cars)
-```
+Data comes from the Horus Heresy BattleScribe data files: https://github.com/BSData/horus-heresy-2nd-edition
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+Specifically, the main rules data file is used: https://github.com/BSData/horus-heresy-2nd-edition/blob/main/2022%20-%20Horus%20Heresy.gst
