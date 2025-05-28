@@ -4,8 +4,12 @@
 library(tidyverse)
 library(xml2)
 
+# Download file from GitHub
+url <- "https://raw.githubusercontent.com/BSData/horus-heresy-2nd-edition/refs/heads/main/2022%20-%20Horus%20Heresy.gst"
+download.file(url, destfile = "data-raw/horus_heresy_raw.xml")
+
 # Basic xml parsing
-horusheresy_raw <- read_xml("data-raw/2022 - Horus Heresy.gst")
+horusheresy_raw <- read_xml("data-raw/horus_heresy_raw.xml")
 xml_ns_strip(horusheresy_raw)
 
 # Extract rules
