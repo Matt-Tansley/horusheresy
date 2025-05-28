@@ -1,6 +1,6 @@
 #' Data on Horus Heresy
 #'
-#' A dataset containing information about the civilisations in Sid Meier's Civilization 3
+#' A dataset containing information on the Horus Heresy 2.0 rules
 #'
 #' @format A data frame with 390 rows and 2 columns.
 #' \describe{

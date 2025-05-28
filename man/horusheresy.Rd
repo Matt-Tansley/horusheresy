@@ -18,7 +18,7 @@ Obtained from the Horus Heresy BattleScribe data repo: https://github.com/BSData
 horusheresy
 }
 \description{
-A dataset containing information about the civilisations in Sid Meier's Civilization 3
+A dataset containing information on the Horus Heresy 2.0 rules
 }
 \examples{
 data(horusheresy)
